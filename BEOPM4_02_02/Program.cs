@@ -14,6 +14,9 @@ namespace BEOPM4_02_02
             char aChar = '*';
             bool aBool = true;
 
+            Console.WriteLine(int.MaxValue);
+            Console.WriteLine(long.MaxValue);
+
             Console.WriteLine($"{"argument", 25}{"byte array",30}");
             Console.WriteLine($"{"--------", 25}{"----------",30}");
 

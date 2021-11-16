@@ -7,10 +7,12 @@ namespace BEOPM4_02
         static void Main(string[] args)
         {
             //Conversion converts between all base types, even if it is not obvious.
-            int i1 = Convert.ToInt32(4.5M); 
+            int i1 = Convert.ToInt32(4.5M);
             Console.WriteLine(i1);              //4 due to bankers rounding
 
             int i2 = Convert.ToInt32(5.5F);
+            int i = (int)5.5M;
+            Console.WriteLine(i);
             Console.WriteLine(i2);              //6 due to bankers rounding
             
             int i3 = Convert.ToInt32(false);

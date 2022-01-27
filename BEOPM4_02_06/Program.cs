@@ -13,9 +13,10 @@ namespace BEOPM4_02_06
             {
                 Console.WriteLine($"{val, -25} {Environment.GetFolderPath(val)}");
             }
-
+            Console.WriteLine();
             Console.WriteLine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData));
             Console.WriteLine();
+            
             
             //Explore the Path class
             Console.WriteLine("\nPath exploration");
@@ -23,6 +24,7 @@ namespace BEOPM4_02_06
             Console.WriteLine($"Path separator:    {Path.PathSeparator}");
             Console.WriteLine($"Dir separator:     {Path.PathSeparator}");
 
+            
             Console.WriteLine();
             Console.WriteLine($"Invalid file name char: {new string(Path.GetInvalidFileNameChars())}");
             
@@ -31,14 +33,12 @@ namespace BEOPM4_02_06
             Console.WriteLine($"Current directory: {pwd}");
             Console.WriteLine($"Current root:      {Path.GetPathRoot(pwd)}");
 
-            
             string mylog = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "mylog.txt");
             Console.WriteLine(  );
             Console.WriteLine($"Full Path name:    {Path.GetFullPath(mylog)}");
             Console.WriteLine($"Directory name:    {Path.GetDirectoryName(mylog)}");
             Console.WriteLine($"File name:         {Path.GetFileName(mylog)}");
             Console.WriteLine($"File ext:          {Path.GetExtension(mylog)}");
-           
         }
     }
 }
